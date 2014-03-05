@@ -1,0 +1,14 @@
+/* This stylesheet is used to modify elements on spesific pages. When modifying an element, be sure to include the tag for whatever page you'd like to change it on.
+For example, if I would like to change the height of the content div on the roster page, I would do so as follows:
+
+#ROSTER .content {
+	height: x;
+}
+
+Be sure to include the "#ROSTER" or "#INDEX" (etc.) tags or it will not work correctly. Be sure to space between the page tag and the element you're modifying.
+
+If you add a new page to your website, be sure to create the ID (AKA #ROSTER, #INDEX, etc) for that page. To create an ID for that page, all you have to do is go into your code and look for the <body id="INDEX"> tag. This will then allow you to modify elements to that page by using that tag in this stylesheet. 
+
+NOTE: If you need to edit an element on every page, do so in the main.css stylesheet, and be sure not to included the page spesific tags.
+
+This is a lot to understand. If you need help, ask Ronnie. */

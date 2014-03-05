@@ -1,0 +1,613 @@
+/* ====== CSS Reset/Normalize ====== */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    background: transparent;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+dfn {
+    font-style: italic;
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 0;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ====== END CSS Reset/Normalize ====== */
+
+	   /*
+		|=================================|======
+	====|Template Styles by: Ronnie Darmis|=========
+		|=================================|======
+	   */
+
+/* ====== Template Styles ====== */
+/* ====== Positioning & Gen ====== */
+html, body { height: 100%; width: 100%; } /* Ensures the HTML document renders correctly on screen. */
+
+body { /* Sets the background color of the page, ensures correct spacing, and sets font and font sizing. */
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #DDD;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+ul, ol, dl { /* Corrects spacing of all types of lists */
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p { /* Corrects default spacing of headings and paragraphs. */
+	margin-top: 0;	 
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+a img { /* Cleans up ugly borders on images with links wrapped around them */
+	border: none;
+} 
+
+a:hover, a:active, a:focus { /* Removes ugly borders on links */
+	text-decoration: none;
+}
+
+.header { /* Wraps the Nav and the banner across the entire page. */
+	width: 100%;
+}
+
+.content { /* Sets the height and width, as well as the color of the content box, which is where your text and photographs go. */
+	min-height: 79%;
+	width: 66.5%;
+	background: #FFF;
+	margin: 0 auto;
+	box-shadow: 0 0 1em #888888;
+	clear: both;
+	padding-top: 10px;
+
+}
+
+.footer { /* Sets the footer up and spans it across the bottom of the page. Also sticks the footer to the bottom of the page even when scrolled. */
+	height: 25px;
+	width: 100%;
+	margin: 0 auto;
+	background: #f2f2f2;
+	border-top: 1px solid #ccc;
+	box-shadow: 0 -2px 2px -2px #888;
+	position: fixed;
+	bottom: 0;
+}
+
+.footer a { /* Sets the color of the "Contact Us" link in the footer. */
+	color: #990000;
+}
+
+.footer a:hover { /* Sets the color of the "Contact Us" link when hovered over. */
+	color: #700000;
+	text-decoration: underline;
+}
+
+.footer * { /* Algins ALL footer content. */
+	text-align: center;
+	text-decoration: none;
+}
+
+.mobi-nav{ /* Removes icons from the nav. These are added back in when the width of the page is too small for the full nav bar. */
+	display: none;
+}
+/* ====== END Positioning & Gen ====== */
+
+/* ====== Nav Styles ====== */
+/* ====== Main Nav ====== */
+#nav { /* Nav container, spans the nav across the screen and adds a drop shadow below it. */
+	width: 100%;
+	float: left;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc; 
+	border-top: 1px solid #ccc;
+	box-shadow: 0 2px 2px -2px #888888;
+}
+
+#nav ul { /* Actual nav bar. Removes list styling. */
+	padding: 0;
+	list-style: none;
+	position:relative;
+	margin:0 auto;
+	width: 66.5%;
+}
+
+#nav ul li:first-child a { /* Adds border to the first link in the nav. */
+	border-left: 1px solid #ccc;
+}
+
+#nav ul li { /* Positions each list item horizontally and to the left. */
+	float: left;
+	position: relative;
+}
+
+#nav ul li a { /* Makes the link look pretty! */
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #990000;
+	border-right: 1px solid #ccc;
+}
+
+#nav ul li a:hover, #nav ul li.active, #nav ul li.active a { /* Changes color of link when moused over, adds .active, which can be applied to the link of the page you're on. */
+	color: #700000;
+	background-color: #fff;
+}
+/* ====== END Main Nav ====== */
+
+/* ====== Sub Nav ====== */
+#nav ul ul { /* Positions sub nav. */
+	display: none;
+	background-color: #F2F2F2;
+	position: absolute; 
+	max-width: 150%;
+	width: auto;
+	text-align: center;
+	margin-left: -1px;
+	white-space: nowrap;
+}
+
+#nav ul:after { /* More sub nav positioning */
+	content: ""; clear: both; display: block;
+}
+
+#nav ul li:hover > ul { /* Displays sub nav when parent list item is hovered over */
+	display: block;
+}
+
+#nav ul ul li { /* Positions sub nav list items */
+	float: none; 
+	position: relative;
+	min-width: 100%;
+}
+
+#nav ul ul li a { /* Corrects text size issues and adds consistant borders to both sides */
+	font-size: 1em;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+
+#nav ul ul li:last-child a { /* finishes up border correction */
+	border-bottom: 1px solid #ccc;
+}
+
+#nav ul ul li:hover a { /* Styles sub nav links when hovered over */
+	color: #630102;
+	background-color: #fff;
+	overflow: hidden;
+}
+/* ====== END Sub Nav ====== */
+
+/* ====== Sticky Nav Classes ====== */
+#nav.sticky { /* Sticks nav to top of page when scrolled beyond */
+     position: fixed;
+     top: 0;
+  }
+/* ====== END Sticky Nav Classes ====== */
+
+/* ====== Nav Site Name ====== */
+#name-wrap { /* Positions Site Name within sticky nav */
+	width: 16.75%;
+	float: left;
+}
+
+.name { /* Nav-Name styles */
+	font-size: 1em;
+	float: right;
+	margin: 0 auto;
+	margin-right: 5px;
+	padding: 7px 0;
+	color: #A5A5A5;
+	display: none;
+}
+
+.name-show { /* Displays Site-Name when sticky nav is applied */
+	display: block !important;
+}
+/* ====== END Nav Site Name ====== */
+
+/* ====== Back To Top Styles ====== */
+.to-top {
+	height: 80px;
+	width: 70px;
+	background-color: rgb(105, 105, 105);
+	display: none;
+	position: fixed;
+	top: 75px;
+	right: 40px;
+	border-radius: 4px;
+	opacity: 0.3;
+	cursor: pointer;
+}
+
+.to-top a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.to-top i{
+	margin-left: 12px;
+	color: #FFF;
+}
+
+.to-top p {
+	font-size: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.to-top:hover {
+	-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+	box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+}
+
+.to-top-s {
+	display: block !important;
+}
+/* ====== End Back To Top Styles ====== */
+
+/* ====== Tool Tip Styles ====== */
+i.tip {
+	background: rgb(59, 59, 59);
+	padding: 5px 8px;
+	font-size: 0.7em;
+	border: 1px solid #282828;
+	color: #FFF;
+	border-radius: 7px;
+	margin-top: 0px;
+	position: absolute;
+	text-align: center;
+	white-space: nowrap;
+	display: none;
+	margin-left: -8px;
+	z-index: 100;
+}
+
+a:hover > i.tip {
+	display: block;
+}
+/* ====== End Tool Tip Styles ====== */
+/* ====== End Nav Styles ====== */
+
+.content table {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 25px;
+	border-bottom: 1px solid black;
+}
+
+#SCHEDULE  .content table tr:first-child td {
+	padding-bottom: 10px;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+}
+	
+#SCHEDULE .content table tr td:first-child, .content table tr td:nth-child(3){
+	font-weight: bold;
+}
+
+/* ====== Responsive Styles ====== */
+@media screen /* Fixes Nav breaks and corrects content width when page is > 951px. */
+and (max-width: 950px) {
+	#nav ul {
+		width: 85%;
+	}
+	.content {
+		width: 85%;
+	}
+	.to-top {
+		width: 65px;
+		right: 0 !important;
+	}
+	.to-top i {
+		margin-left: 9.5px;
+	}
+}
+
+@media only screen /* Fixes nav breaks, displays name always, removes banner, removes footer, spans content further across the screen for easier viewing on smaller screen sizes */
+and (max-width: 885px) {
+    /* ====== Nav Styles ====== */
+	#nav ul {
+		width: 100%;
+	}	
+	
+	#nav.sticky {
+		position: fixed;
+		top: 0;
+	}
+	#name-wrap {
+		width: 25%;
+	}
+	.name {
+		display: block;
+	}
+	.name-show {
+		display: block !important;
+	}
+	/* ====== End Nav Styles ====== */
+	.content {
+		width: 90%;
+		padding-top: 10px;
+		min-height: 92%;
+	}
+	.footer {
+		display: none;
+	}	
+	.banner {
+		display: none;
+	}
+	.to-top-s {
+		display: none !important;
+	}
+}
+
+@media all /* Removes last two list items, adds mobi icons to replace them */
+and (max-width: 820px)
+and (orientation: portrait) {
+	#nav ul li:nth-child(4) a {
+		display: none;
+	}
+	#nav ul li:nth-child(5) a {
+		display: none;
+	}
+	.mobi-nav {
+		display: block !important;
+	}
+	.mobi-nav li:first-child a{
+		border-left: none !important;
+	}
+	
+}
+
+@media all /* Fixes Site-Name in nav breaks */
+and (max-width: 480px) {
+	#name-wrap h5.name  {
+		font-size: 75% !important;
+		margin-top: 2.8px;
+	}
+	.mobi-nav a:last-child {
+		display: none !important;
+	}
+}
+
+@media all /* Fixes bug where last two nav links would display in heights > 480 */
+and (max-height: 480px) {
+	#nav ul li:nth-child(4) a {
+		display: none;
+	}
+	#nav ul li:nth-child(5) a {
+		display: none;
+	}
+}
+
+@media all /* Fixes bug where content created scrollbar when > 735px height */
+and (max-height: 735px) {
+	.content {
+		min-height: 93%;
+	}
+}
+/* ====== END Responsive Styles ====== */
+
+/*---------------------------------|
+Template Code above this point.    |
+								   |
+WARNING: BEFORE EDITING ABOVE CODE |
+BE SURE YOU KNOW WHAT YOU'RE DOING |
+                                   |
+NOTICE: Do not edit above code if  |
+you have little CSS experience.    |
+----------------------------------*/
+
+/* ====== END Template Styles ====== */
+  
+.banner { /* Space for banner image */
+	width: 100%;
+	background-color: #990000;
+	height: 150px;
+}
+
+.placeholder {
+	background: rgb('255, 255, 255');
+	height: 300px;
+	width: 175px;
+}
